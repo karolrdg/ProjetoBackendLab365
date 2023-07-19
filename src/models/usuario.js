@@ -1,10 +1,9 @@
-const { Sequelize } = require("sequelize"); //aqui usado sequelize 
-const { DataTypes } = require("sequelize");
+const { Sequelize } = require("sequelize"); //aqui usado sequelize
+const conexao  = require('../database/connection');
 
-const conexao = require("../database/connection");
+//const conexao = require("../database/database.config.js");
 
 const Usuario = conexao.define("usuario", {
-  
   id: {
     type: Sequelize.INTEGER,
     primaryKey: true,
@@ -32,7 +31,7 @@ const Usuario = conexao.define("usuario", {
   telefone: {
     type: Sequelize.STRING,
   },
-  email: {  
+  email: {
     type: Sequelize.STRING,
     unique: true,
   },
@@ -41,10 +40,8 @@ const Usuario = conexao.define("usuario", {
     allowNull: false,
   },
   status: {
-    type: Sequelize.ENUM(
-        'ATIVO','INATIVO'
-    ),
-    defaultValue: 'ATIVO'
+    type: Sequelize.ENUM("ATIVO", "INATIVO"),
+    defaultValue: "ATIVO",
   },
 });
 

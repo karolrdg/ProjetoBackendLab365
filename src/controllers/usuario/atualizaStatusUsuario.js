@@ -8,7 +8,7 @@ async function atualizaStatusUsuario(request, response) {
         if(!usuario) {
             return response
             .status(404)
-            .json({message: 'Médico não encontrado'})
+            .json({message: 'Usuário não encontrado'})
         }
 
         if (![

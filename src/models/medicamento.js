@@ -1,7 +1,7 @@
 const { DataTypes } = require("sequelize");
 const { Sequelize } = require("sequelize");
 const conexao = require("../database/connection");
-const Yup = require("yup");
+const Deposito = require("./deposito");
 
 const Medicamento = conexao.define(
   "medicamento",
@@ -54,9 +54,10 @@ const Medicamento = conexao.define(
           'ATIVO','INATIVO'
       ),
       defaultValue: 'ATIVO'
-    },
-  },
-  
+    },   
+  }, 
 );
+
+
 
 module.exports = Medicamento;

@@ -5,7 +5,7 @@ async function atualizaMedicamento(request, response) {
     const medicamento = await Medicamento.findByPk(request.params.id);
 
     if (!medicamento)
-      return response.status(404).json({ message: "Médico não localizado" });
+      return response.status(404).json({ message: "Medicamento não localizado" });
 
     await Medicamento.update(
       {

@@ -7,7 +7,7 @@ async function atualizaUsuario(request, response) {
     if (!usuario)
       return response.status(404).json({ message: "Usuário não localizado" });
 
-      //update nome, sobrenome, telefone, genero...só mudanças nesses campos é que vão atualizar
+    //update nome, sobrenome, telefone, genero...só mudanças nesses campos é que vão atualizar
     await Usuario.update(
       {
         nome: request.body.nome || usuario.nome,
@@ -22,12 +22,14 @@ async function atualizaUsuario(request, response) {
       }
     );
 
-    const usuarioAtualizado = await Usuario.findByPk(request.params.id);
-    response.json({ message: "Usuário alterado com sucesso!", usuario: usuarioAtualizado });
-  } catch (error) {
-    console.error("Não foi possível processar a requisição", error.message);
-    response.status(500).json({ message: "Não foi possível processar a requisição" });
-  }
+    const usuarioAtualizado = await Usuario.findByPk(request.params.id)
+        response.json(usuarioAtualizado)
+    } catch (error) {
+        response
+        .status(400)
+        .json({message: "Não foi possível processar a requisição"})
+    }
+  
 }
 
 module.exports = atualizaUsuario;
