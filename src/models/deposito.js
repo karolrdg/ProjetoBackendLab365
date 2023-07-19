@@ -1,74 +1,74 @@
-const { DataTypes } = require("sequelize"); //Importando DataTypes do sequelize (opcional diferente do usuario)
+const { Sequelize } = require("sequelize"); //Importando Sequelize do sequelize (opcional diferente do usuario)
 const conexao = require("../database/connection");
 
 const Deposito = conexao.define("deposito", {
   usuario_id: {
-    type: DataTypes.INTEGER,
+    type: Sequelize.INTEGER,
     allowNull: false,
   },
   razao_social: {
-    type: DataTypes.STRING,
+    type: Sequelize.STRING,
     unique: true,
     allowNull: false,
   },
   cnpj: {
-    type: DataTypes.STRING,
+    type: Sequelize.STRING,
     unique: true,
     allowNull: false,
   },
   nome_fantasia: {
-    type: DataTypes.STRING,
+    type: Sequelize.STRING,
     allowNull: false,
   },
   email: {
-    type: DataTypes.STRING,
+    type: Sequelize.STRING,
     allowNull: false,
     validate: {
       isEmail: true,
     },
   },
   telefone: {
-    type: DataTypes.STRING,
+    type: Sequelize.STRING,
   },
   celular: {
-    type: DataTypes.STRING,
+    type: Sequelize.STRING,
     allowNull: false,
   },
   cep: {
-    type: DataTypes.STRING,
+    type: Sequelize.STRING,
     allowNull: false,
   },
   logradouro: {
-    type: DataTypes.STRING,
+    type: Sequelize.STRING,
     allowNull: false,
   },
   numero: {
-    type: DataTypes.STRING,
+    type: Sequelize.STRING,
     allowNull: false,
   },
   bairro: {
-    type: DataTypes.STRING,
+    type: Sequelize.STRING,
     allowNull: false,
   },
   cidade: {
-    type: DataTypes.STRING,
+    type: Sequelize.STRING,
     allowNull: false,
   },
   estado: {
-    type: DataTypes.STRING,
+    type: Sequelize.STRING,
     allowNull: false,
   },
   complemento: {
-    type: DataTypes.STRING,
+    type: Sequelize.STRING,
   },
   latitude: {
-    type: DataTypes.STRING,
+    type: Sequelize.STRING,
   },
   longitude: {
-    type: DataTypes.STRING,
+    type: Sequelize.STRING,
   },
   status: {
-    type: DataTypes.ENUM("ATIVO", "INATIVO"),
+    type: Sequelize.ENUM("ATIVO", "INATIVO"),
     defaultValue: "ATIVO",
   },
 });

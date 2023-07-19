@@ -19,7 +19,7 @@ const excluiDeposito = require("./src/controllers/deposito/excluiDeposito");
 const listaDeposito = require("./src/controllers/deposito/listaDeposito");
 const listaTodosDepositos = require("./src/controllers/deposito/listaTodosDepositos");
 const atualizaDeposito = require("./src/controllers/deposito/atualizaDeposito");
-
+const atualizaStatusDeposito = require("./src/controllers/deposito/atualizaStatusDeposito");
 // Controllers de Medicamento
 const cadastraMedicamento = require("./src/controllers/medicamento/cadastraMedicamento");
 const excluiMedicamento = require("./src/controllers/medicamento/excluiMedicamento");
@@ -53,6 +53,7 @@ app.delete("/api/depositos/:id", excluiDeposito);
 app.get("/api/depositos/:id", listaDeposito);
 app.get("/api/depositos/", listaTodosDepositos);
 app.patch("/api/depositos/:id", atualizaDeposito);
+app.patch("/api/depositos/:id/status", atualizaStatusDeposito);
 
 //ROTAS MEDICAMENTOS
 app.post("/api/medicamentos", validaMedicamento, cadastraMedicamento);

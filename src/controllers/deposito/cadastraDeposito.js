@@ -22,19 +22,21 @@ async function cadastraDeposito(request, response) {
       status: request.body.status,
     };
 
-    const DepositoExiste = await Deposito.findOne({
+    const depositoExiste = await Deposito.findOne({
       where: { cnpj: dadosDeposito.cnpj },
-      where: { razao_social: dadosDeposito.razao_social}
+      where: { razao_social: dadosDeposito.razao_social },
     });
 
-    if (DepositoExiste)
-      return response.status(409).json({ message: "Deposito já cadastrado" });
+    if (depositoExiste)
+      return response
+        .status(409)
+        .json({ message: "Deposito já cadastrado", cause: "CNPJ ou Razão Social já cadastrados" });
 
     const novoDeposito = await Deposito.create(dadosDeposito);
     return response.status(201).json(novoDeposito);
   } catch (error) {
     console.error("Requisição não processada", error.message);
-    response.status(500).json({ message: "Requisição não processada" });
+    response.status(400).json({ message: "Requisição não processada" });
   }
 }
 

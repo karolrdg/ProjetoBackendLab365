@@ -2,7 +2,7 @@ const Usuario = require('../../models/usuario');
 
 async function listaUsuario(request, response) {
     try {
-        const filtros = request.query // query param /api/usuarios?status=PARAMETRO 
+        const filtros = request.query 
         
         if(filtros.status) {
 
