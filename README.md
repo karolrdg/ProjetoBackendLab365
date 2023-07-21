@@ -15,7 +15,7 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
 
 ## Demonstração com imagens
 * No caso que vai ser apresentado, foi ultilizada a porta 3001 e o Thunder Client para realizar os testes, mas pode ser utilizado também: Insomnia, Postman entre outros :D
-
+## Usuário 👽
 ### S01 - Cadastro de Usuário
 #### HTTP POST no path /api/usuarios
 ##### HTTP Status Code 201 (CREATED)
@@ -93,11 +93,40 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
 **OBS**: Foi utilizado o seguinte trecho de código para "excluir' a senha: *const usuario = await Usuario.findByPk(request.params.id, {
       attributes: { exclude: ['senha'] } // Exclui o campo de senha da resposta});*
   ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/a33afa2b-8e8c-4d89-90f7-65e2181d430b)
-  
- 
-##### HTTP Status Code 404 (Not Found)
+  ##### HTTP Status Code 404 (Not Found)
 * !encontrado
 ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/2bbdafa1-3afe-446b-8891-b2137012ffe3)
+
+## Depósito 📦
+### S07 - Cadastro de Depósito
+#### HTTP POST no path /api/depositos
+##### HTTP Status Code 201 (CREATED)
+* Depósito cadastrado
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/9b1f6dee-5bc3-4c1f-8660-0a97a7f80849)
+##### HTTP Status Code 400 (Bad Request)
+* Dados inválidos
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/12d517d3-adbe-42b9-aa0a-10cc4bc7a5b5)
+##### HTTP Status Code 409 (Conflict)
+* CNPJ ou Razão Social já cadastrados
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/b28e1521-ffe3-4621-8818-1ead8bc7e10a)
+
+### S08 - Atualização dos dados de Depósitos
+#### HTTP PATCH no path /api/depositos/{identificador}
+##### HTTP Status Code 204 (No Content)
+* Campos pra serem atualizados: Nome Fantasia, E-mail, Telefone, Celular e Endereço...
+**IMPORTANTE ⬇️**
+* No projeto consta "No corpo da request, informar objeto json com os campos que podem ser alterados neste endpoints, são eles: Nome Fantasia, E-mail, Telefone, Celular e Endereço". Sendo endrereço composto por: CEP, Logradouro, Número, Bairro, Cidade, Estado e Complemento, por tanto, eliminei o campo endereço para não ficar repetido, já que os campos abaixo também é um endereço!
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/da84c196-e8ce-416a-a5dc-0dae91120973)
+
+##### HTTP Status Code 400 (Bad Request)
+* Dados inválidos
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/0f734d2a-aeb6-4657-bdf6-ad54addcf357)
+
+##### HTTP Status Code 404 (Not Found)
+* !encontrado
+  ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/8fe8d362-e860-4da6-9c2d-b6a4fcd9b966)
+
+
  
  
 
