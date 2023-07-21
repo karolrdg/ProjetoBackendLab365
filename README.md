@@ -54,7 +54,7 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
 * id 20 não se encontra no banco de dados, o usuário em questão foi cadastrado com o id 4
 ![imagem10](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/404.jpg?token=GHSAT0AAAAAAB5IV2F4W5XYBFAF3F3GGJSIZF2BQXA)
 
-### S03 - Atualização do Status do Usuário no Sistema
+### S04 - Atualização do Status do Usuário no Sistema
 #### HTTP PATCH no path /api/usuarios/{identificador}/status
 ##### HTTP Status Code 200 (Ok)
 * Status atualizado (antes estava ativo, como dá pra notar na primeira imagem dessa documentação)
@@ -66,7 +66,19 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
 * !encontrado id (id 8 não está no banco de dados)
 ![imagem13](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/notfoundstatususer.jpg?token=GHSAT0AAAAAAB5IV2F5CZ4QAHJ2KTH3O5BOZF2DUCQ)
 
-
+### S05 - Atualização de Senha do Usuário
+#### HTTP PATCH no path /api/usuarios/{identificador}/senha
+##### HTTP Status Code 204 (No Content)
+**IMPORTANTE ⬇️**
+* A senha deve ter pelo menos 8 caracteres
+* A senha deve conter pelo menos uma letra maiúscula, um número e um caractere especial
+![imagem14](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/senha204.jpg?token=GHSAT0AAAAAAB5IV2F4MQTPPVY6REK2UJCUZF2D6IQ)
+##### HTTP Status Code 400 (Bad Request)
+* Observe que a senha foi digitada como "err", sendo assim, não cumpre os requisitos
+![imagem15](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/senha400.jpg?token=GHSAT0AAAAAAB5IV2F4NAY4LOLEKV6I4DXUZF2EDTA)
+##### HTTP Status Code 404 (Not Found)
+* !encontrado id (id 8 não está no banco de dados)
+![imagem16](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/usuariosenha404.jpg?token=GHSAT0AAAAAAB5IV2F56WW4VNTMN3A2NNEMZF2EOWQ)
 
 
 
