@@ -54,6 +54,26 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
 * id 20 não se encontra no banco de dados, o usuário em questão foi cadastrado com o id 4
 ![imagem10](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/404.jpg?token=GHSAT0AAAAAAB5IV2F4W5XYBFAF3F3GGJSIZF2BQXA)
 
+### S03 - Atualização do Status do Usuário no Sistema
+#### HTTP PATCH no path /api/usuarios/{identificador}/status
+##### HTTP Status Code 200 (Ok)
+* Status atualizado (antes estava ativo, como dá pra notar na primeira imagem dessa documentação)
+![imagem11](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/userstatus200.jpg?token=GHSAT0AAAAAAB5IV2F5BE4VMKCYM6AOGFA4ZF2DOQA)
+##### HTTP Status Code 400 (Bad Request)
+* Dados inválidos
+![imagem12](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/bad400status.jpg?token=GHSAT0AAAAAAB5IV2F5D5TRWUC5FHXBMUVMZF2DSEQ)
+##### HTTP Status Code 404 (Not Found) 
+* !encontrado id (id 8 não está no banco de dados)
+![imagem13](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/notfoundstatususer.jpg?token=GHSAT0AAAAAAB5IV2F5CZ4QAHJ2KTH3O5BOZF2DUCQ)
+
+
+
+
+
+
+
+
+
 
 
 
