@@ -20,10 +20,12 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
 #### HTTP POST no path /api/usuarios
 ##### HTTP Status Code 201 (CREATED)
 * Usuário cadastrado 
-![imagem1](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/usercreated.jpg?token=GHSAT0AAAAAAB5IV2F43WZKNQ7SJ7ZFOKIKZF2FIYA)
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/05e35b77-7b79-435b-be08-d31e7bbdd0bd)
+
 ##### HTTP Status Code 400 (Bad Request)
 * Dados inválidos
-![imagem2](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/cpfinvalido.jpg?token=GHSAT0AAAAAAB5IV2F5O2S6542MUVF7FA4WZF2FJKQ)
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/47c9953f-adaf-48a7-9fdf-37babeb25540)
+
 ##### HTTP Status Code 409 (Conflict)
 * CPF já cadastrado (usuário já no sistema)
 ![imagem3](https://github.com/karolrdg/ProjetoBackendLab365/blob/main/src/img/conflict.jpg?raw=true)
@@ -89,12 +91,15 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
 ##### HTTP Status Code 200 (OK)
 * Dados do usuário, *exceto a senha*
 **OBS**: Foi utilizado o seguinte trecho de código para "excluir' a senha: *const usuario = await Usuario.findByPk(request.params.id, {
-      attributes: { exclude: ['senha'] } // Exclui o campo de senha da resposta
-    });*
- ![imagem17](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/listagemsenha200.jpg?token=GHSAT0AAAAAAB5IV2F4ZUHTX57ZPLSANPPMZF2FBMQ)   
+      attributes: { exclude: ['senha'] } // Exclui o campo de senha da resposta});*
+  ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/a33afa2b-8e8c-4d89-90f7-65e2181d430b)
+  
+ 
 ##### HTTP Status Code 404 (Not Found)
 * !encontrado
- ![imagem17](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/listagem404.jpg?token=GHSAT0AAAAAAB5IV2F4REYTFQ5RP235TBW6ZF2FD6A) 
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/2bbdafa1-3afe-446b-8891-b2137012ffe3)
+ 
+ 
 
 
 
