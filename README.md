@@ -79,8 +79,10 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
 ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/fc00b9e0-a4ab-4f74-bbaf-b86cedbdafa9)
 
 ##### HTTP Status Code 404 (Not Found)
-* !encontrado id (id 8 não está no banco de dados)
-![imagem16](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/usuariosenha404.jpg?token=GHSAT0AAAAAAB5IV2F56WW4VNTMN3A2NNEMZF2EOWQ)
+* !encontrado id (id 8 não está no banco de dados
+  ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/b5108541-ffe2-4893-a9e1-e25808e01f39)
+
+
 
 ### S06 - Listagem de Usuário pelo identificador
 #### HTTP GET no path /api/usuarios/{identificador}
