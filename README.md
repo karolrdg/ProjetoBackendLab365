@@ -72,10 +72,12 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
 **IMPORTANTE ⬇️**
 * A senha deve ter pelo menos 8 caracteres
 * A senha deve conter pelo menos uma letra maiúscula, um número e um caractere especial
-![imagem14](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/senha204.jpg?token=GHSAT0AAAAAAB5IV2F4MQTPPVY6REK2UJCUZF2D6IQ)
+   ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/fdf76511-7315-47c0-8048-d918897b140d)
+  
 ##### HTTP Status Code 400 (Bad Request)
 * Observe que a senha foi digitada como "err", sendo assim, não cumpre os requisitos
-![imagem15](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/senha400.jpg?token=GHSAT0AAAAAAB5IV2F4NAY4LOLEKV6I4DXUZF2EDTA)
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/fc00b9e0-a4ab-4f74-bbaf-b86cedbdafa9)
+
 ##### HTTP Status Code 404 (Not Found)
 * !encontrado id (id 8 não está no banco de dados)
 ![imagem16](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/usuariosenha404.jpg?token=GHSAT0AAAAAAB5IV2F56WW4VNTMN3A2NNEMZF2EOWQ)
