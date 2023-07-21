@@ -20,51 +20,51 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
 #### HTTP POST no path /api/usuarios
 ##### HTTP Status Code 201 (CREATED)
 * Usuário cadastrado 
-![imagem1](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/usercreated.jpg?token=GHSAT0AAAAAAB5IV2F4EQAS6POGOXRVXPOCZF2B7AA)
+![imagem1](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/usercreated.jpg?token=GHSAT0AAAAAAB5IV2F43WZKNQ7SJ7ZFOKIKZF2FIYA)
 ##### HTTP Status Code 400 (Bad Request)
 * Dados inválidos
-![imagem2](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/cpfinvalido.jpg?token=GHSAT0AAAAAAB5IV2F5Z3LWWD2WTJV3XIM6ZF2CAFA)
+![imagem2](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/cpfinvalido.jpg?token=GHSAT0AAAAAAB5IV2F5O2S6542MUVF7FA4WZF2FJKQ)
 ##### HTTP Status Code 409 (Conflict)
 * CPF já cadastrado (usuário já no sistema)
-![imagem3](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/conflict.jpg?token=GHSAT0AAAAAAB5IV2F4JWZUWQ4YCV7SGA6KZF2CA7Q)
+![imagem3](https://github.com/karolrdg/ProjetoBackendLab365/blob/main/src/img/conflict.jpg?raw=true)
 
 ### S02 - Login do Usuário
 #### HTTP POST /usuarios/login
 ##### HTTP Status Code 200 (Ok)
 * Retornar um JSON informando o token
-![imagem4](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/token.jpg?token=GHSAT0AAAAAAB5IV2F4CNOE2OWYVZHXBSTWZF2B4BQ)
+![imagem4](https://github.com/karolrdg/ProjetoBackendLab365/blob/main/src/img/token.jpg?raw=true)
 * Token validado (http://localhost:3001/user)
-![imagem5](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/tokenvalido.jpg?token=GHSAT0AAAAAAB5IV2F4CTFG5N56MF5HCTT2ZF2CD6Q)
+![imagem5](https://github.com/karolrdg/ProjetoBackendLab365/blob/main/src/img/tokenvalido.jpg?raw=true)
 #### HTTP POST /usuarios/login
 ##### HTTP Status Code 400 (Bad Request)
 * Email ou senha inválidos
-![imagem6](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/emailinva.jpg?token=GHSAT0AAAAAAB5IV2F5BLMGZDB5NHUDGCIQZF2CFAQ)
+![imagem6](https://github.com/karolrdg/ProjetoBackendLab365/blob/main/src/img/emailinva.jpg?raw=true)
 
 ### S03 - Atualização dos dados de Usuário
 #### HTTP PATCH no path /api/usuarios/{identificador}
 ##### HTTP Status Code 200 (Ok)
 * Dados atualizados - *ANTES*
-![imagem7](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/updatedadosantes.jpg?token=GHSAT0AAAAAAB5IV2F472JSMCOUF5EN5BZEZF2A7DA)
+![imagem7](https://github.com/karolrdg/ProjetoBackendLab365/blob/main/src/img/updatedadosantes.jpg?raw=true)
 * Dados atualizados (Campos: Nome, Sobrenome, Gênero e Telefone) - *DEPOIS*
-![imagem8](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/updatedadosdepois.jpg?token=GHSAT0AAAAAAB5IV2F4P5S7XDECO75VS5WMZF2A7XA)
+![imagem8](https://github.com/karolrdg/ProjetoBackendLab365/blob/main/src/img/updatedadosdepois.jpg?raw=true)
 ##### HTTP Status Code 400 (Bad Request)
 * Dados inválidos
-![imagem9](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/400.jpg?token=GHSAT0AAAAAAB5IV2F4FAWLTD3WRH6OTJDEZF2BORA)
+![imagem9](https://github.com/karolrdg/ProjetoBackendLab365/blob/main/src/img/400.jpg?raw=true)
 ##### HTTP Status Code 404 (Not Found) 
 * id 20 não se encontra no banco de dados, o usuário em questão foi cadastrado com o id 4
-![imagem10](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/404.jpg?token=GHSAT0AAAAAAB5IV2F4W5XYBFAF3F3GGJSIZF2BQXA)
+![imagem10](https://github.com/karolrdg/ProjetoBackendLab365/blob/main/src/img/404.jpg?raw=true)
 
 ### S04 - Atualização do Status do Usuário no Sistema
 #### HTTP PATCH no path /api/usuarios/{identificador}/status
 ##### HTTP Status Code 200 (Ok)
 * Status atualizado (antes estava ativo, como dá pra notar na primeira imagem dessa documentação)
-![imagem11](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/userstatus200.jpg?token=GHSAT0AAAAAAB5IV2F5BE4VMKCYM6AOGFA4ZF2DOQA)
+![imagem11](https://github.com/karolrdg/ProjetoBackendLab365/blob/main/src/img/userstatus200.jpg?raw=true)
 ##### HTTP Status Code 400 (Bad Request)
 * Dados inválidos
-![imagem12](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/bad400status.jpg?token=GHSAT0AAAAAAB5IV2F5D5TRWUC5FHXBMUVMZF2DSEQ)
+![imagem12](https://github.com/karolrdg/ProjetoBackendLab365/blob/main/src/img/bad400status.jpg?raw=true)
 ##### HTTP Status Code 404 (Not Found) 
 * !encontrado id (id 8 não está no banco de dados)
-![imagem13](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/notfoundstatususer.jpg?token=GHSAT0AAAAAAB5IV2F5CZ4QAHJ2KTH3O5BOZF2DUCQ)
+![imagem13](https://github.com/karolrdg/ProjetoBackendLab365/blob/main/src/img/notfoundstatususer.jpg?raw=true)
 
 ### S05 - Atualização de Senha do Usuário
 #### HTTP PATCH no path /api/usuarios/{identificador}/senha
@@ -79,6 +79,26 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
 ##### HTTP Status Code 404 (Not Found)
 * !encontrado id (id 8 não está no banco de dados)
 ![imagem16](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/usuariosenha404.jpg?token=GHSAT0AAAAAAB5IV2F56WW4VNTMN3A2NNEMZF2EOWQ)
+
+### S06 - Listagem de Usuário pelo identificador
+#### HTTP GET no path /api/usuarios/{identificador}
+##### HTTP Status Code 200 (OK)
+* Dados do usuário, *exceto a senha*
+**OBS**: Foi utilizado o seguinte trecho de código para "excluir' a senha: *const usuario = await Usuario.findByPk(request.params.id, {
+      attributes: { exclude: ['senha'] } // Exclui o campo de senha da resposta
+    });*
+ ![imagem17](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/listagemsenha200.jpg?token=GHSAT0AAAAAAB5IV2F4ZUHTX57ZPLSANPPMZF2FBMQ)   
+##### HTTP Status Code 404 (Not Found)
+* !encontrado
+ ![imagem17](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/listagem404.jpg?token=GHSAT0AAAAAAB5IV2F4REYTFQ5RP235TBW6ZF2FD6A) 
+
+
+
+
+
+
+
+
 
 
 
