@@ -20,25 +20,25 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
 #### HTTP POST no path /api/usuarios
 ##### HTTP Status Code 201 (CREATED)
 * Usuário cadastrado 
-![imagem1](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/usercreated.jpg?token=GHSAT0AAAAAAB5IV2F5CRVIPTHQIZI6HN5YZFZ6PHA)
+![imagem1](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/usercreated.jpg?token=GHSAT0AAAAAAB5IV2F4EQAS6POGOXRVXPOCZF2B7AA)
 ##### HTTP Status Code 400 (Bad Request)
 * Dados inválidos
-![imagem2](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/cpfinvalido.jpg?token=GHSAT0AAAAAAB5IV2F4ZXMFJWF46X3X6MYUZFZ6WKQ)
+![imagem2](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/cpfinvalido.jpg?token=GHSAT0AAAAAAB5IV2F5Z3LWWD2WTJV3XIM6ZF2CAFA)
 ##### HTTP Status Code 409 (Conflict)
 * CPF já cadastrado (usuário já no sistema)
-![imagem3](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/conflict.jpg?token=GHSAT0AAAAAAB5IV2F5AJOZCNIGXKOOOA2KZFZ6Y3A)
+![imagem3](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/conflict.jpg?token=GHSAT0AAAAAAB5IV2F4JWZUWQ4YCV7SGA6KZF2CA7Q)
 
 ### S02 - Login do Usuário
 #### HTTP POST /usuarios/login
 ##### HTTP Status Code 200 (Ok)
 * Retornar um JSON informando o token
-![imagem4](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/token.jpg?token=GHSAT0AAAAAAB5IV2F5AHHL2KBALKFX4UQYZFZ7MOQ)
+![imagem4](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/token.jpg?token=GHSAT0AAAAAAB5IV2F4CNOE2OWYVZHXBSTWZF2B4BQ)
 * Token validado (http://localhost:3001/user)
-![imagem5](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/tokenvalido.jpg?token=GHSAT0AAAAAAB5IV2F5EO6NG5HCOOX3CKJEZFZ7NQQ)
+![imagem5](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/tokenvalido.jpg?token=GHSAT0AAAAAAB5IV2F4CTFG5N56MF5HCTT2ZF2CD6Q)
 #### HTTP POST /usuarios/login
 ##### HTTP Status Code 400 (Bad Request)
 * Email ou senha inválidos
-![imagem6](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/emailinva.jpg?token=GHSAT0AAAAAAB5IV2F5ZMHRS54WSKC5MB72ZFZ7SZQ)
+![imagem6](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/emailinva.jpg?token=GHSAT0AAAAAAB5IV2F5BLMGZDB5NHUDGCIQZF2CFAQ)
 
 ### S03 - Atualização dos dados de Usuário
 #### HTTP PATCH no path /api/usuarios/{identificador}
