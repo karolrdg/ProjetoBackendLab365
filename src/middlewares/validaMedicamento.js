@@ -11,9 +11,9 @@ const validacao = yup.object().shape({
   descricao: yup.string(),
   dosagem: yup.number().required(),
   unidade_dosagem: yup.string().required().oneOf(["mg", "mcg", "g", "mL", "%", "Outro"]),
-  tipo: yup.string().required().oneOf(["Medicamento Controlado", "Medicamento Não Controlado"]),
+  tipo: yup.string().required().oneOf(["CONTROLADO", "NAOCONTROLADO"]),
   preco_unitario: yup.number()
-  .transform((value) => parseFloat(value)),
+  .transform((value) => parseFloat(value)),//transforma o valor em float por exemplo 10.00 etc
   quantidade: yup.number().required(),
 });
 

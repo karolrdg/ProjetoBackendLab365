@@ -20,13 +20,13 @@ const listaDeposito = require("./src/controllers/deposito/listaDeposito");
 const listaTodosDepositos = require("./src/controllers/deposito/listaTodosDepositos");
 const atualizaDeposito = require("./src/controllers/deposito/atualizaDeposito");
 const atualizaStatusDeposito = require("./src/controllers/deposito/atualizaStatusDeposito");
+
 // Controllers de Medicamento
 const cadastraMedicamento = require("./src/controllers/medicamento/cadastraMedicamento");
 const excluiMedicamento = require("./src/controllers/medicamento/excluiMedicamento");
 const listaMedicamento = require("./src/controllers/medicamento/listaMedicamento");
 const listaTodosMedicamentos = require("./src/controllers/medicamento/listaTodosMedicamentos");
 const atualizaMedicamento = require("./src/controllers/medicamento/atualizaMedicamento");
-const atualizaStatusMedicamento = require("./src/controllers/medicamento/atualizaStatusMedicamento");
 
 // Middlewares
 const validaUsuario = require("./src/middlewares/validaUsuario");
@@ -61,7 +61,6 @@ app.delete("/api/medicamentos/:id", excluiMedicamento);
 app.get("/api/medicamentos/:id", listaMedicamento);
 app.get("/api/medicamentos/", listaTodosMedicamentos);
 app.patch("/api/medicamentos/:id", atualizaMedicamento);
-app.patch("/api/medicamentos/:id/status", atualizaStatusMedicamento);
 
 //conecta com o banco de dados
 conexao.authenticate();

@@ -36,8 +36,8 @@ const Medicamento = conexao.define(
     },
     tipo: {
       type: DataTypes.ENUM(
-        "Medicamento Controlado",
-        "Medicamento Não Controlado"
+        "CONTROLADO",
+        "NAOCONTROLADO"
       ),
       allowNull: false,
     },
@@ -49,12 +49,7 @@ const Medicamento = conexao.define(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    status: {
-      type: DataTypes.ENUM(
-          'ATIVO','INATIVO'
-      ),
-      defaultValue: 'ATIVO'
-    },   
+    //não precisa de status, pois o medicamento é excluído do banco de dados quando a quantidade chega a 0
   }, 
 );
 

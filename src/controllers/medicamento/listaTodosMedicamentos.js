@@ -5,18 +5,18 @@ async function listaMedicamento(request, response) {
         const filtros = request.query
          // query param /api/medicamentos?status=PARAMETRO 
         
-        if(filtros.status) {
+        if(filtros.tipo) {
 
-            if (!["ATIVO","INATIVO",].includes(filtros.status)) {
+            if (!["CONTROLADO","NAOCONTROLADO",].includes(filtros.tipo)) {
             
             return response
             .status(400)
-            .json({ message: 'O status deve ser ATIVO ou INATIVO'})
+            .json({ message: 'Medicação controlada ou não controlada'})
             }
             const medicamentos = await Medicamento.findAll(
                 {
                     where: {
-                        estado_no_sistema: filtros.status
+                        tipo: filtros.tipo
                     }
                 }
             ) 
