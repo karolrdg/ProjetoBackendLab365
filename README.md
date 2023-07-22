@@ -6,7 +6,7 @@ A LABPharmacy Inc, uma renomada empresa do ramo de tecnologia farmacêutica, est
 A LABPharmacy Inc deseja criar a API Rest da aplicação Pharmacy Central System (PCS), um software para gestão de depósitos e medicamentos, que será utilizado para o controle de estoque dos medicamentos de hospitais e postos de saúde.
 
 
-## ❤️ Começando ❤️▶️
+## Começando ▶️
 Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o download do código na sua máquina, necessário dar um **npm install** no terminal e logo após, **npm start** que irá inicializar o nodemon.
 * Banco de dados nesse projeto foi criado com o nome de **projeto_pcsdb**.
 
@@ -126,10 +126,10 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
 ### S09 - Atualização do Status do Depósito no Sistema
 #### HTTP PATCH no path /api/depositos/{identificador}/status
 ##### HTTP Status Code 204 (No Content) - 200
-*ANTES ATIVO*
+* *ANTES ATIVO*
 ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/e5653b8b-d099-4f9e-a19a-d7e0620ed387)
 
-*DEPOIS INATIVO*
+* *DEPOIS INATIVO*
 ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/2bc56f6c-e7c0-4839-8995-e10822229b9c)
 
 
@@ -229,6 +229,7 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
 
 **Considerações finais**
 Importante salientar que a migração do sistema para o banco de dados foi feita com **conexao.sync({ alter: true });**, por opção para esse projeto, não foi utilizado migrations (create table, por ex), sendo o resultado bastante parecido, mesmo que superficialmente com esse método mais prático e simples, mais uma vez, **para esse projeto**
+Foi utilizado Sequelize para fazer a interface com o postgres, no index.js as tabelas são criadas usando a função conexao.sync({alter: true}). Essa função verifica os modelos da pasta models (Usuário, Depósito e Medicamento) e cria as tabelas correspondentes no banco de dados, se elas ainda não existirem. Se as tabelas já existirem, ele faz alterações nas tabelas para refletir as mudanças nos modelos
 
 **Exemplo do banco de dados em funcionamento usando o método que preferi ⬇️**
 * Usuário
@@ -269,5 +270,5 @@ Importante salientar que a migração do sistema para o banco de dados foi feita
 
 
 
-EM DESENVOLVIMENTO
+
 
