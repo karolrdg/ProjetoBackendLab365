@@ -68,7 +68,7 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
 ### S05 - Atualização de Senha do Usuário
 #### HTTP PATCH no path /api/usuarios/{identificador}/senha
 ##### HTTP Status Code 204 (No Content)
-**IMPORTANTE ⬇️**
+⚠️**IMPORTANTE ⬇️**
 * A senha deve ter pelo menos 8 caracteres
 * A senha deve conter pelo menos uma letra maiúscula, um número e um caractere especial
    ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/fdf76511-7315-47c0-8048-d918897b140d)
@@ -111,7 +111,7 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
 #### HTTP PATCH no path /api/depositos/{identificador}
 ##### HTTP Status Code 204 (No Content)
 * Campos pra serem atualizados: Nome Fantasia, E-mail, Telefone, Celular e Endereço...
-**IMPORTANTE ⬇️**
+⚠️**IMPORTANTE ⬇️**
 * No projeto consta "No corpo da request, informar objeto json com os campos que podem ser alterados neste endpoints, são eles: Nome Fantasia, E-mail, Telefone, Celular e Endereço". Sendo endrereço composto por: CEP, Logradouro, Número, Bairro, Cidade, Estado e Complemento, por tanto, eliminei o campo endereço para não ficar repetido, já que os campos abaixo também é um endereço!
 ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/da84c196-e8ce-416a-a5dc-0dae91120973)
 
@@ -230,7 +230,7 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
 * !encontrado
 ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/a76ab180-1e04-40a4-9a56-24ffedb33f53)
 
-**Considerações finais**
+### Considerações finais 🟢
 Importante salientar que a migração do sistema para o banco de dados foi feita com **conexao.sync({ alter: true });**, por opção para esse projeto, não foi utilizado migrations (create table, por ex), sendo o resultado bastante parecido, mesmo que superficialmente com esse método mais prático e simples, mais uma vez, **para esse projeto**.
 Foi utilizado Sequelize para fazer a interface com o postgres, no index.js as tabelas são criadas usando a função conexao.sync({alter: true}). Essa função verifica os modelos da pasta models (Usuário, Depósito e Medicamento) e cria as tabelas correspondentes no banco de dados, se elas ainda não existirem. Se as tabelas já existirem, ele faz alterações nas tabelas para refletir as mudanças nos modelos
 
