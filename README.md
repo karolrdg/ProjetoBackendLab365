@@ -9,7 +9,7 @@ A LABPharmacy Inc deseja criar a API Rest da aplicação Pharmacy Central System
 
 
 
-## ❤️ Começando ❤️
+## ❤️ Começando ❤️▶️
 Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o download do código na sua máquina, necessário dar um **npm install** no terminal e logo após, **npm start** que irá inicializar o nodemon.
 * Banco de dados nesse projeto foi criado com o nome de **projeto_pcsdb**.
 
