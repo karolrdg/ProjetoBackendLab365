@@ -159,6 +159,25 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
 * Agora a listagem com o uso do *GET* mostrando todos os depósitos no sistema, sendo 2.
 ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/1543fc76-df1d-4872-9ed8-7a8fbe74c1a7)
 
+### S11 - Listagem de Depósito pelo identificador
+#### HTTP GET no path /api/depositos/{identificador}
+##### HTTP Status Code 200 (OK)
+* Dados do depósito
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/c78a9ecb-7693-4c02-b631-e8e3ac5e8927)
+##### HTTP Status Code 404 (Not Found)
+* !encontrado
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/5e0f8cdf-59a2-4df1-8239-8c7b63079b6c)
+
+### S12 - Exclusão de Depósito
+#### HTTP DELETE no path /api/depositos/{identificador}
+##### HTTP Status Code 204 (No Content)
+* Após ser *deletado* do banco de dados, como foi dito anteriormente (S10), o terceiro depósito cadastrado foi excluído para mostrar ele em funcionamento. **Lembrando** que podem ser cadastrados quantos ítens forem necessários, em questão, nesse exemplo, foram 3 e um deletado, como visto aqui. *Somente para fins de testes*, não exclusivamente em ordem
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/ff4e1744-5670-4ed8-bb1d-1fcf468ca49a)
+##### HTTP Status Code 404 (Not Found)
+* O depósito em questão de id 8 que fora excluído antes, já não encontrado mais no sistema, pois foi excluído no banco de dados
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/f698af7c-c971-4a04-88bc-9decb9e116ff)
+
+
   
 
 
