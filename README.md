@@ -79,7 +79,7 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
 
 ##### HTTP Status Code 404 (Not Found)
 * !encontrado id (id 8 não está no banco de dados
-  ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/b5108541-ffe2-4893-a9e1-e25808e01f39)
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/b5108541-ffe2-4893-a9e1-e25808e01f39)
 
 
 
@@ -121,7 +121,7 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
 
 ##### HTTP Status Code 404 (Not Found)
 * !encontrado
-  ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/8fe8d362-e860-4da6-9c2d-b6a4fcd9b966)
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/8fe8d362-e860-4da6-9c2d-b6a4fcd9b966)
 
 ### S09 - Atualização do Status do Depósito no Sistema
 #### HTTP PATCH no path /api/depositos/{identificador}/status
@@ -140,7 +140,7 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
 
 ##### HTTP Status Code 404 (Not Found)
 * !encontrado
- ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/e87346ec-9b6c-4ea3-830b-1aece598808a)
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/e87346ec-9b6c-4ea3-830b-1aece598808a)
 
 ### S10 - Listagem de Depósitos
 #### HTTP GET no path /api/depositos
@@ -150,7 +150,7 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
 ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/d84f8b3b-3ad3-465e-93b9-551f763c683c)
 * No banco de dados nesse momento em questão, só tinham dois depositos cadastrados, após a exclusão de um para mostrar **mais a frente**. Sendo assim, constava os dois, como *ATIVO* e INATIVO. Ex:
   
-  ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/94a72cb6-4599-4bc1-9a78-057363db229c)
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/94a72cb6-4599-4bc1-9a78-057363db229c)
   
 ##### HTTP Status Code 200 (OK)
 * Agora a listagem com o uso do *GET* mostrando todos os depósitos no sistema, sendo 2.
@@ -232,10 +232,10 @@ Importante salientar que a migração do sistema para o banco de dados foi feita
 
 **Exemplo do banco de dados em funcionamento usando o método que preferi ⬇️**
 * Usuário
-  ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/0eca1dcf-6e60-4a3a-b6d2-661313697909)
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/0eca1dcf-6e60-4a3a-b6d2-661313697909)
 
 * Depósito
-  ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/e61d9f80-e71d-4bf9-ba3d-457ca3711672)
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/e61d9f80-e71d-4bf9-ba3d-457ca3711672)
 
 * Medicação
 ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/3b9c240a-7e0d-46e6-92e6-23716ec07c9a)
