@@ -152,7 +152,7 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
   
   ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/94a72cb6-4599-4bc1-9a78-057363db229c)
   
-##### HTTP Status Code 200 (OK
+##### HTTP Status Code 200 (OK)
 * Agora a listagem com o uso do *GET* mostrando todos os depósitos no sistema, sendo 2.
 ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/1543fc76-df1d-4872-9ed8-7a8fbe74c1a7)
 
@@ -198,6 +198,51 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
 ##### HTTP Status Code 404 (Not Found)
 * !encontrado (não existe medicamento com esse id no sistema/banco de dados
 ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/088137ba-6442-4cca-b0f4-6c5e710d9999)
+
+### S15 - Listagem de Medicamentos
+#### HTTP GET no path /api/medicamentos
+* Valores possíveis para serem informados na requisição = CONTROLADO e NAOCONTROLADO
+* Exemplo de path com o query param informado:
+*/api/medicamentos?tipo=CONTROLADO*
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/97bd5d8e-fda7-486c-a464-0657828396e4)
+*/api/medicamentos?tipo=NAOCONTROLADO*
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/621c4d81-1bc1-4004-b843-52940aba3f56)
+##### HTTP Status Code 200 (OK)
+* Todas medicações que tinham no banco de dados (3)
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/c7bb4589-dfa4-449d-8f09-71afd2aade81)
+
+### S16 - Listagem de Medicamento pelo identificador
+#### HTTP GET no path /api/medicamentos/{identificador}
+##### HTTP Status Code 200 (OK)
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/22162609-f03a-458b-8c9f-8dfd9d5ca630)
+##### HTTP Status Code 404 (Not Found)
+* !encontrado
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/f3c5ff4f-a319-4c43-904e-1f90c54a7617)
+
+### S17 - Exclusão de Medicamento
+#### HTTP DELETE no path /api/medicamentos/{identificador}
+##### HTTP Status Code 204 (No Content)
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/4ea7b88f-8f99-4a5e-8ac1-1db472df904a)
+##### HTTP Status Code 404 (Not Found)
+* !encontrado
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/a76ab180-1e04-40a4-9a56-24ffedb33f53)
+
+**Considerações finais**
+Importante salientar que a migração do sistema para o banco de dados foi feita com **conexao.sync({ alter: true });**, por opção para esse projeto, não foi utilizado migrations (create table, por ex), sendo o resultado bastante parecido, mesmo que superficialmente com esse método mais prático e simples, mais uma vez, **para esse projeto**
+
+**Exemplo do banco de dados em funcionamento usando o método que preferi ⬇️**
+* Usuário
+  ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/0eca1dcf-6e60-4a3a-b6d2-661313697909)
+
+* Depósito
+  ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/e61d9f80-e71d-4bf9-ba3d-457ca3711672)
+
+* Medicação
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/3b9c240a-7e0d-46e6-92e6-23716ec07c9a)
+
+##### Lembrando que as imagens acima são só uma base, pois não foram mostrados todos os dados no print, que não coube no corte em questão. O intuito foi mostrar que usando o método simples, foi útil para esse projeto.
+
+
 
   
 
