@@ -178,6 +178,7 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
 ### S13 - Cadastro de Medicamento 
 #### HTTP POST no path /api/medicamentos
 ##### HTTP Status Code 201 (CREATED)
+* Medicamento cadastrado
 ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/3c46fe3b-06fc-4110-bbd4-90c360be1838)
 ##### HTTP Status Code 400 (Bad Request)
 * Dados inválidos
@@ -214,6 +215,7 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
 ### S16 - Listagem de Medicamento pelo identificador
 #### HTTP GET no path /api/medicamentos/{identificador}
 ##### HTTP Status Code 200 (OK)
+* Listagem
 ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/22162609-f03a-458b-8c9f-8dfd9d5ca630)
 ##### HTTP Status Code 404 (Not Found)
 * !encontrado
@@ -222,13 +224,14 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
 ### S17 - Exclusão de Medicamento
 #### HTTP DELETE no path /api/medicamentos/{identificador}
 ##### HTTP Status Code 204 (No Content)
+* Excluir
 ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/4ea7b88f-8f99-4a5e-8ac1-1db472df904a)
 ##### HTTP Status Code 404 (Not Found)
 * !encontrado
 ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/a76ab180-1e04-40a4-9a56-24ffedb33f53)
 
 **Considerações finais**
-Importante salientar que a migração do sistema para o banco de dados foi feita com **conexao.sync({ alter: true });**, por opção para esse projeto, não foi utilizado migrations (create table, por ex), sendo o resultado bastante parecido, mesmo que superficialmente com esse método mais prático e simples, mais uma vez, **para esse projeto**
+Importante salientar que a migração do sistema para o banco de dados foi feita com **conexao.sync({ alter: true });**, por opção para esse projeto, não foi utilizado migrations (create table, por ex), sendo o resultado bastante parecido, mesmo que superficialmente com esse método mais prático e simples, mais uma vez, **para esse projeto**.
 Foi utilizado Sequelize para fazer a interface com o postgres, no index.js as tabelas são criadas usando a função conexao.sync({alter: true}). Essa função verifica os modelos da pasta models (Usuário, Depósito e Medicamento) e cria as tabelas correspondentes no banco de dados, se elas ainda não existirem. Se as tabelas já existirem, ele faz alterações nas tabelas para refletir as mudanças nos modelos
 
 **Exemplo do banco de dados em funcionamento usando o método que preferi ⬇️**
