@@ -126,6 +126,41 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
 * !encontrado
   ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/8fe8d362-e860-4da6-9c2d-b6a4fcd9b966)
 
+### S09 - Atualização do Status do Depósito no Sistema
+#### HTTP PATCH no path /api/depositos/{identificador}/status
+##### HTTP Status Code 204 (No Content) - 200
+*ANTES ATIVO*
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/e5653b8b-d099-4f9e-a19a-d7e0620ed387)
+
+*DEPOIS INATIVO*
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/2bc56f6c-e7c0-4839-8995-e10822229b9c)
+
+
+##### HTTP Status Code 400 (Bad Request)
+* Dados inválidos
+* O status tem que ser *EXATAMENTE* "ATIVO" OU "INATIVO"
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/9b03261c-75dc-421a-b7fe-20d9d6907541)
+
+##### HTTP Status Code 404 (Not Found)
+* !encontrado
+ ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/e87346ec-9b6c-4ea3-830b-1aece598808a)
+
+### S10 - Listagem de Depósitos
+#### HTTP GET no path /api/depositos
+* Valores possíveis para serem informados na requisição = ATIVO e INATIVO
+* Exemplo de path com o query param informado:
+*/api/depositos?status=ATIVO*
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/d84f8b3b-3ad3-465e-93b9-551f763c683c)
+* No banco de dados nesse momento em questão, só tinham dois depositos cadastrados, após a exclusão de um para mostrar **mais a frente**. Sendo assim, constava os dois, como *ATIVO* e INATIVO. Ex:
+  
+  ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/94a72cb6-4599-4bc1-9a78-057363db229c)
+  
+##### HTTP Status Code 200 (OK
+* Agora a listagem com o uso do *GET* mostrando todos os depósitos no sistema, sendo 2.
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/1543fc76-df1d-4872-9ed8-7a8fbe74c1a7)
+
+  
+
 
  
  
