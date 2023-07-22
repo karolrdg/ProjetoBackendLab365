@@ -1,12 +1,9 @@
 
-# Projeto Backend [LABPHARMACY 💊]
+# Projeto Backend [LABPHARMACY 🏥]
 
 A LABPharmacy Inc, uma renomada empresa do ramo de tecnologia farmacêutica, está expandindo seus serviços. Por conta da expansão, o time de gestão necessita da criação de um sistema online, intitulado Pharmacy Central System (PCS), para gerenciamento de depósitos e medicamentos. Por conta da participação no projeto de front-end, o seu perfil chamou a atenção dos gestores, para agora criar o back-end do sistema que deverá ser codificado em Node, utilizando o framework Express.js com o uso do banco de dados PostgreSQL.
 
 A LABPharmacy Inc deseja criar a API Rest da aplicação Pharmacy Central System (PCS), um software para gestão de depósitos e medicamentos, que será utilizado para o controle de estoque dos medicamentos de hospitais e postos de saúde.
-
-
-
 
 
 ## ❤️ Começando ❤️▶️
@@ -177,6 +174,30 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
 * O depósito em questão de id 8 que fora excluído antes, já não encontrado mais no sistema, pois foi excluído no banco de dados
 ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/f698af7c-c971-4a04-88bc-9decb9e116ff)
 
+## Medicamento 💊
+### S13 - Cadastro de Medicamento 
+#### HTTP POST no path /api/medicamentos
+##### HTTP Status Code 201 (CREATED)
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/3c46fe3b-06fc-4110-bbd4-90c360be1838)
+##### HTTP Status Code 400 (Bad Request)
+* Dados inválidos
+* *Quantidade* foi deletada para o teste, e como era elemento obrigatório apareceu Bad Request
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/374bfabc-4bb2-410f-880d-a9d47ec25f64)
+##### HTTP Status Code 409 (Conflict)
+* Medicamento já cadastrado
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/9c914df8-fff5-48f5-9880-d1fa323e4d7a)
+
+### S14 - Atualização dos dados de Medicamento
+#### HTTP PATCH no path /api/medicamentos/{identificador}
+##### HTTP Status Code 200 (OK)
+* Dados atualizados
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/130038cd-cc2f-4b49-9a59-55dc0789a21f)
+##### HTTP Status Code 400 (Bad Request)
+* Dados inválidos
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/d4564c97-0470-4734-acdc-2d8b13d10a98)
+##### HTTP Status Code 404 (Not Found)
+* !encontrado (não existe medicamento com esse id no sistema/banco de dados
+![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/088137ba-6442-4cca-b0f4-6c5e710d9999)
 
   
 
