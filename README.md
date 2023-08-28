@@ -21,7 +21,7 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
 
 ##### HTTP Status Code 400 (Bad Request)
 * Dados inválidos
-![image]https://github.com/karolrdg/ProjetoBackendLab365/blob/main/src/img/usercreated.jpg?raw=true
+![image](https://github.com/karolrdg/ProjetoBackendLab365/blob/main/src/img/usercreated.jpg?raw=true)
 
 ##### HTTP Status Code 409 (Conflict)
 * CPF já cadastrado (usuário já no sistema)
