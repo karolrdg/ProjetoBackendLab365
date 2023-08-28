@@ -17,11 +17,11 @@ Após fazer o clone [https://github.com/karolrdg/ProjetoBackendLab365.git] ou o 
 #### HTTP POST no path /api/usuarios
 ##### HTTP Status Code 201 (CREATED)
 * Usuário cadastrado 
-![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/05e35b77-7b79-435b-be08-d31e7bbdd0bd)
+![image](https://raw.githubusercontent.com/karolrdg/ProjetoBackendLab365/main/src/img/usercreated.jpg)
 
 ##### HTTP Status Code 400 (Bad Request)
 * Dados inválidos
-![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/47c9953f-adaf-48a7-9fdf-37babeb25540)
+![image]https://github.com/karolrdg/ProjetoBackendLab365/blob/main/src/img/usercreated.jpg?raw=true
 
 ##### HTTP Status Code 409 (Conflict)
 * CPF já cadastrado (usuário já no sistema)
