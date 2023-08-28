@@ -242,7 +242,7 @@ Foi utilizado Sequelize para fazer a interface com o postgres, no index.js as ta
 ![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/e61d9f80-e71d-4bf9-ba3d-457ca3711672)
 
 * Medicação
-![image](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/3b9c240a-7e0d-46e6-92e6-23716ec07c9a)
+![](https://github.com/karolrdg/ProjetoBackendLab365/assets/87062322/3b9c240a-7e0d-46e6-92e6-23716ec07c9a)
 
 ##### Lembrando que as imagens acima são só uma base, pois não foram mostrados todos os dados no print, que não coube no corte em questão. O intuito foi mostrar que usando o método simples, foi útil para esse projeto.
 
